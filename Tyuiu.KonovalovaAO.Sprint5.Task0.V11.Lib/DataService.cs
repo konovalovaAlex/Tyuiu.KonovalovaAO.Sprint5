@@ -11,6 +11,7 @@ namespace Tyuiu.KonovalovaAO.Sprint5.Task0.V11.Lib
     {
         public string SaveToFileTextData(int x)
         {
+            
             string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask0.txt";
             double chisl = 4 - Math.Pow(x, 3);
             double znam = Math.Pow(x, 2);
