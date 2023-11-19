@@ -11,6 +11,7 @@ namespace Tyuiu.KonovalovaAO.Sprint5.Task2.V7
     {
         static void Main(string[] args)
         {
+            DataService ds = new DataService();
             Console.Title = "Спринт #5 | Выполнила: Коновалова А. О. | СМАРТб-23-1";
             Console.WriteLine("**************************************************************************");
             Console.WriteLine("* Спринт #5                                                              *");
@@ -30,9 +31,6 @@ namespace Tyuiu.KonovalovaAO.Sprint5.Task2.V7
             Console.WriteLine("**************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                       *");
             Console.WriteLine("**************************************************************************");
-
-            DataService ds = new DataService();
-
             int[,] matrix = new int[3, 3] { { 9, 2, 8 },
                                             { 7, 1, 2 },
                                             { 5, 5, 1 } };
@@ -56,7 +54,7 @@ namespace Tyuiu.KonovalovaAO.Sprint5.Task2.V7
 
             string res = ds.SaveToFileTextData(matrix);
             Console.WriteLine("Файл: " + res);
-            Console.WriteLine("Создан");
+            Console.WriteLine("Создан!");
 
             using (StreamReader reader = new StreamReader(res))
             {
