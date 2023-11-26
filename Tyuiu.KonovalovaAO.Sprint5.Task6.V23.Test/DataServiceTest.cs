@@ -24,6 +24,7 @@ namespace Tyuiu.KonovalovaAO.Sprint5.Task6.V23.Test
             var res = ds.LoadFromDataFile(path);
             int wait = 7;
             Assert.AreEqual(wait, res);
+
         }
     }
 }
